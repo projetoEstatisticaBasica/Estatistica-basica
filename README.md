@@ -72,3 +72,17 @@ qqline(numeros_aleatorios, col="red")
 
 # Resetar layout dos gráficos
 par(mfrow=c(1, 1))
+
+
+Licença
+Este projeto é licenciado sob os termos da licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorias e correções.
+
+Contato
+Para perguntas ou suporte, você pode me encontrar em:
+aldreiperalta16@gmail.com
+
+Este README inclui informações essenciais como uma descrição do projeto, requisitos, instruções de uso, um exemplo de código, informações sobre a licença, como contribuir e formas de contato. Ajuste conforme necessário para se adequar ao seu projeto específico e às suas preferências.
+
