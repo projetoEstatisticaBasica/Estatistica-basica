@@ -90,12 +90,14 @@ aldreiperalta16@gmail.com
 Este README inclui informações essenciais como uma descrição do projeto, requisitos, instruções de uso, um exemplo de código, informações sobre a licença, como contribuir e formas de contato. Ajuste conforme necessário para se adequar ao seu projeto específico e às suas preferências.
 
 
-### Passo 3: Faça o upload do arquivo README.md e da imagem
 
-Certifique-se de que a imagem e o README.md estão no repositório. Você pode fazer isso usando comandos git:
+### Passo 2: Commit e push do README.md atualizado
+
+Depois de editar o README.md, faça o commit e push das mudanças para o repositório no GitHub:
 
 ```sh
-git add images/Rplot29.png README.md
-git commit -m "Adiciona imagem de exemplo e atualiza README"
+git add README.md
+git commit -m "Adiciona imagem de exemplo no README"
 git push origin main
+
 
