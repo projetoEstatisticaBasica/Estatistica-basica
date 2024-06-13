@@ -74,15 +74,18 @@ qqline(numeros_aleatorios, col="red")
 par(mfrow=c(1, 1))
 
 
-Licença
+#Licença
+```sh
 Este projeto é licenciado sob os termos da licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-Contribuição
+#Contribuição
+```sh
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorias e correções.
 
-Contato
+#Contato
+```sh
 Para perguntas ou suporte, você pode me encontrar em:
 aldreiperalta16@gmail.com
-
+```sh
 Este README inclui informações essenciais como uma descrição do projeto, requisitos, instruções de uso, um exemplo de código, informações sobre a licença, como contribuir e formas de contato. Ajuste conforme necessário para se adequar ao seu projeto específico e às suas preferências.
 
