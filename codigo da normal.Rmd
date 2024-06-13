@@ -1,0 +1,64 @@
+---
+title: "Untitled"
+author: "Realizado por Aldrei Peralta."
+date: "2024-06-13"
+output: html_document
+---
+
+
+Para criar um código no R Studio que trate da distribuição normal, você pode realizar várias operações, como gerar números aleatórios seguindo uma distribuição normal, calcular a densidade, a função de distribuição acumulada, entre outras. Aqui está um exemplo básico de como fazer isso:
+
+
+```{r}
+Copiar código
+# Definir os parâmetros da distribuição normal
+media <- 0       # média da distribuição normal
+desvio_padrao <- 1  # desvio padrão da distribuição normal
+
+# Gerar uma sequência de valores
+x <- seq(-4, 4, length=100)
+
+# Calcular a densidade da distribuição normal
+densidade <- dnorm(x, mean=media, sd=desvio_padrao)
+
+# Calcular a função de distribuição acumulada
+cdf <- pnorm(x, mean=media, sd=desvio_padrao)
+
+# Gerar números aleatórios seguindo a distribuição normal
+set.seed(123)  # para reprodutibilidade
+numeros_aleatorios <- rnorm(1000, mean=media, sd=desvio_padrao)
+
+# Criar gráficos
+par(mfrow=c(2, 2))  # configurar a janela de gráficos para 2x2
+
+# Gráfico da densidade
+plot(x, densidade, type="l", main="Densidade da Distribuição Normal", xlab="x", ylab="Densidade")
+
+# Gráfico da função de distribuição acumulada
+plot(x, cdf, type="l", main="Função de Distribuição Acumulada", xlab="x", ylab="F(x)")
+
+# Histograma dos números aleatórios gerados
+hist(numeros_aleatorios, breaks=30, probability=TRUE, main="Histograma de Números Aleatórios", xlab="Valor", ylab="Densidade")
+lines(density(numeros_aleatorios), col="blue")
+
+# Gráfico QQ-plot para verificar a normalidade dos números aleatórios
+qqnorm(numeros_aleatorios)
+qqline(numeros_aleatorios, col="red")
+
+# Resetar layout dos gráficos
+par(mfrow=c(1, 1))
+````
+
+Este código realiza as seguintes ações:
+
+Define os parâmetros da distribuição normal (média e desvio padrão).
+Gera uma sequência de valores x que será usada para calcular a densidade e a função de distribuição acumulada.
+Calcula a densidade (dnorm) e a função de distribuição acumulada (pnorm) para os valores x.
+Gera 1000 números aleatórios seguindo a distribuição normal (rnorm).
+Cria gráficos para visualizar a densidade, a função de distribuição acumulada, um histograma dos números aleatórios gerados, e um QQ-plot para verificar a normalidade dos números aleatórios.
+Este código é um ponto de partida para explorar a distribuição normal no R Studio e pode ser expandido ou modificado conforme necessário para atender a requisitos específicos.
+
+
+
+
+
